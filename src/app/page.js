@@ -1,14 +1,16 @@
 import Image from "next/image";
 import Hero from '@/components/shared/Hero/Hero'
 import About from '@/components/shared/About/About'
-import Projects from '@/components/shared/Projects/Projects'
+import ProjectCard from '@/components/shared/Projects/ProjectCard'
+import Skills from '@/components/shared/Skills/Skills'
 
 export default function Home() {
   return (
     <div>
       <Hero/>
       <About/>
-      <Projects/>
+      <ProjectCard/>
+      <Skills/>
     </div>
   );
 }
