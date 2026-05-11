@@ -2,7 +2,8 @@ import Image from "next/image";
 import Hero from '@/components/shared/Hero/Hero'
 import About from '@/components/shared/About/About'
 import ProjectCard from '@/components/shared/Projects/ProjectCard'
-import Skills from '@/components/shared/Skills/Skills'
+import Skills from '@/components/shared/Skills/Skills';
+import Contact from '@/components/shared/Contact/Contact';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <About/>
       <ProjectCard/>
       <Skills/>
+      <Contact/>
     </div>
   );
 }
