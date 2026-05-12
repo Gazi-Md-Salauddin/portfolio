@@ -27,17 +27,10 @@ const projects = [
 
 
 const ProjectCard = () => {
-  // const [projects, setProjects] = useState([]);
-
-  // useEffect(() => {
-  //   fetch("/projects.json")
-  //     .then((res) => res.json())
-  //     .then((data) => setProjects(data));
-  // }, []);
   
   
   return (
-    <section className="py-24 bg-[#0F172A] text-white">
+    <section id="projects" className="py-24 bg-[#0F172A] text-white">
       <div className="max-w-6xl mx-auto px-6">
 
         <h2 className="text-3xl font-bold mb-10">

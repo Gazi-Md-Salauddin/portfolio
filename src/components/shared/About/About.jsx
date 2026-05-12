@@ -55,7 +55,7 @@ const icons = [
 
 const About = () => {
   return (
-    <section className="py-18 bg-[#020617] text-white my-16">
+    <section id="about" className="py-18 bg-[#020617] text-white my-16">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10">
         {/*Left side*/}
         <div className="bg-white/5 border border-white/10 p-6 rounded-xl">
