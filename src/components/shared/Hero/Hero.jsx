@@ -11,7 +11,7 @@ const Hero = () => {
             <div className="w-full mx-auto grid md:grid-cols-2 gap-18">
                 {/* LEFT */}
                 <div>
-                    <div className="inline-flex items-center gap-3 p-2 my-2 border border-blue-700 bg-blue-950/30 rounded-full">
+                    <div className="inline-flex items-center gap-3 px-4 py-2 my-2 border border-blue-700 bg-blue-950/30 rounded-full">
                         <span className="animate-pulse w-3 h-3 bg-blue-500 rounded-full shadow-[0_0_10px_rgba(59,130,246,0.8)]"></span>
 
                         <span className="text-blue-400">
@@ -20,16 +20,30 @@ const Hero = () => {
                     </div>
 
                     <p className="my-4 font-semibold">Hey, I'm</p>
-                    <h1 className="text-[2.7rem] font-bold leading-tight flex">
-                        Gazi Md Salauddin👋
+                    <h1 className="text-[2.7rem] font-bold leading-tight ">
+                        Gazi Md Salauddin
+                        <motion.span 
+                        className="inline-block"
+                            animate={{ rotate: [0, 14, -8, 14, -4, 10, 0] }}
+                            transition={{
+                                duration: 1.5,
+                                repeat: Infinity,
+                                repeatDelay: 1
+                            }}
+                            style={{
+                                
+                                transformOrigin: "70% 70%"
+                            }}
+                        >
+                            👋
+                        </motion.span>
                     </h1>
 
                     <div className="flex gap-2 items-center text-white mt-4 max-w-md">
                         <p className="text-[1.3em]">I am a {""}</p>
                         <TypeAnimation
                             sequence={[
-                                
-                                "Frontened Developer",
+                                "Frontend Developer",
                                 1000,
                                 "Mern Stack Developer",
                                 1000,
@@ -38,23 +52,32 @@ const Hero = () => {
                             ]}
                             wrapper="span"
                             speed={50}
-                            style={{ fontSize: "1.3em", display: "inline-block" }}
+                            className="text-blue-500"
+                            style={{
+                                fontSize: "1.3em",
+                                display: "inline-block"
+                            }}
                             repeat={Infinity}
                         />
                     </div>
 
                     <div className="flex gap-4 mt-6">
                         <Button color="primary">Hire Me</Button>
-                        <Button variant="bordered">
-                            View Work
-                        </Button>
+                        <Button variant="bordered">View Work</Button>
                     </div>
                 </div>
 
                 {/* RIGHT */}
                 <div className="flex justify-center items-center">
-                    <motion.div animate={{ y: [0, -6, 0] }}
-  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }} className="border-2 border-blue-500 w-70 h-70 rounded-full shadow-[0_0_20px_rgba(59,130,246,0.8)]">
+                    <motion.div
+                        animate={{ y: [0, -6, 0] }}
+                        transition={{
+                            duration: 4,
+                            repeat: Infinity,
+                            ease: "easeInOut"
+                        }}
+                        className="border-2 border-blue-500 w-70 h-70 rounded-full shadow-[0_0_20px_rgba(59,130,246,0.8)]"
+                    >
                         <Image
                             src={HeroImg}
                             alt="Hero Image"
