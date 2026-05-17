@@ -13,8 +13,11 @@ const Skills = () => {
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true, amount: 0.3 }} className="py-24 bg-[#0F172A]">
         <h2 className="text-3xl font-bold mb-10 px-6 text-blue-400">Skills</h2>
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6">
-            <h2 className="text-2xl font-semibold text-blue-400 mt-4">Frontend</h2>
+        <div className="flex px-4">
+          
+             {/*Frontend*/}
+      <div className="w-full mx-auto px-2 flex flex-col gap-6">
+            <h2 className="text-2xl font-semibold text-blue-400 my-4 px-4">Frontend</h2>
         {frontend.map(f=>(
           <div key={f} className="bg-white/5 border border-white/10 p-4 rounded-xl hover:shadow-[0_0_30px_rgba(59,130,246,0.5)]">
             <h3>{f}</h3>
@@ -25,8 +28,9 @@ const Skills = () => {
         ))}
 
       </div>
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6">
-            <h2 className="text-2xl font-semibold text-blue-400 mt-8">Backend</h2>
+           {/*Backend*/}
+      <div className="w-full mx-auto px-2 flex flex-col gap-6">
+            <h2 className="text-2xl font-semibold text-blue-400 my-4">Backend</h2>
         {backend.map(b=>(
           <div key={b} className="bg-white/5 border border-white/10 p-4 rounded-xl hover:shadow-[0_0_30px_rgba(59,130,246,0.5)]">
             <h3>{b}</h3>
@@ -37,8 +41,9 @@ const Skills = () => {
         ))}
 
       </div>
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6">
-            <h2 className="text-2xl font-semibold text-blue-400 mt-8">Tools</h2>
+           {/*Tools*/}
+      <div className="w-full mx-auto px-2 flex flex-col gap-6">
+            <h2 className="text-2xl font-semibold text-blue-400 my-4">Tools</h2>
         {tools.map(t=>(
           <div key={t} className="bg-white/5 border border-white/10 p-4 rounded-xl hover:shadow-[0_0_30px_rgba(59,130,246,0.5)]">
             <h3>{t}</h3>
@@ -49,6 +54,7 @@ const Skills = () => {
         ))}
 
       </div>
+        </div>
       
     </motion.section>
   );
