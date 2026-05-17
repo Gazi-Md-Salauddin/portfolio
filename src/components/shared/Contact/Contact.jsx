@@ -1,7 +1,11 @@
 "use client";
 import React, { useRef } from 'react';
 import { Input, TextArea, Button } from "@heroui/react";
+import { IoLocationOutline } from "react-icons/io5";
 import emailjs from '@emailjs/browser';
+import { toast } from 'react-hot-toast';
+import { motion } from "framer-motion";
+import { IoIosSend } from "react-icons/io";
 
 const Contact = () => {
   const form = useRef();
@@ -11,18 +15,29 @@ const Contact = () => {
 
     emailjs.sendForm('service_9b7sbrk', 'template_t6qgdoo', form.current, 'Gw0JwKahnPSpb7MqG')
       .then((result) => {
-          console.log(result.text);
-          alert("মেসেজ সফলভাবে পাঠানো হয়েছে!");
-          e.target.reset(); // ফর্মটি খালি করার জন্য
+          toast('Message sent successfully',
+  {
+    icon: '👏',
+    style: {
+      borderRadius: '10px',
+      background: '#333',
+      color: '#fff',
+    },
+  }
+);
+          e.target.reset();
       }, (error) => {
           alert(error.text);
-          //alert("দুঃখিত, আবার চেষ্টা করুন।");
+          alert("");
       });
   };
   
     return (
         <section id="contact" className="py-24 bg-[#020617] text-white">
-            <div className="max-w-6xl mx-auto bg-white/5 border border-white/10 rounded-xl px-6 py-6">
+            <motion.div initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true, amount: 0.3 }} className="max-w-6xl mx-auto bg-white/5 border border-white/10 rounded-xl px-6 py-6">
                 <h2 className="text-3xl font-bold mb-8 text-blue-400">Contact Me</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/*Left Side*/}
@@ -54,7 +69,7 @@ const Contact = () => {
 
                             <div className="flex items-center gap-5">
                                 <div className="w-12 h-12 rounded-xl glass flex items-center justify-center">
-                                    📍
+                                    <IoLocationOutline/>
                                 </div>
                                 <div>
                                     <p className="text-xs text-muted-foreground uppercase tracking-widest">
@@ -78,11 +93,11 @@ const Contact = () => {
                         />
 
                         <Button type="submit" color="primary" className="w-full">
-                            Send Message
+                            <IoIosSend/>Send Message
                         </Button>
                     </form>
                 </div>
-            </div>
+            </motion.div>
         </section>
     );
 };

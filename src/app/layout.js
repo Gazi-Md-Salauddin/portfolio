@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from '@/components/shared/Navbar/Navbar'
+import Navbar from '@/components/shared/Navbar/Navbar';
+import Cursor from '@/components/Cursor';
+import { Toaster } from 'react-hot-toast';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,6 +28,8 @@ export default function RootLayout({ children }) {
       <body className="bg-gradient-to-br from-[#020617] via-[#0B1220] to-[#020617] text-white">
         <Navbar/>
         <main>{children}</main>
+        <Cursor/>
+        <Toaster/>
         </body>
     </html>
   );

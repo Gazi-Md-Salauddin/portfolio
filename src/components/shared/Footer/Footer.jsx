@@ -1,6 +1,6 @@
 "use client";
 import Link from 'next/link'
-//import { Github, Linkedin, Facebook, Instagram, ArrowUp } from "lucide-react";
+import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -10,9 +10,9 @@ const Footer = () => {
 
             <div className="max-w-6xl mx-auto px-6 py-14 relative z-10">
                 {/* TOP AREA */}
-                <div className="flex flex-col md:flex-row items-center justify-between gap-10">
+                <div className="md:flex items-center justify-between gap-10">
                     {/* LEFT */}
-                    <div>
+                    <div className="flex flex-col justify-start">
                         <h2 className="text-2xl font-bold text-blue-500">
                             Gazi Md Salauddin
                             <span className="text-white">.</span>
@@ -25,7 +25,9 @@ const Footer = () => {
                     </div>
 
                     {/* CENTER LINKS */}
-                    <div className="flex gap-6 text-sm text-gray-400">
+                    <div className="md:text-center">
+                      <h2 className="text-2xl font-semibold text-blue-400 my-6">Important Links</h2>
+                    <div className="flex gap-4 text-sm text-gray-400">
                         <a
                             href="#about"
                             className="hover:text-white transition"
@@ -54,56 +56,45 @@ const Footer = () => {
                             Contact
                         </a>
                     </div>
+                    </div>
 
                     {/* SOCIALS */}
-                    <div className="flex items-center gap-3">
-                        <a
-                            href="#"
+                    <div className="md:px-4 md:text-center">
+                      <h2 className="text-2xl font-semibold text-blue-400 my-6">Social Links</h2>
+                      <div className="flex items-center gap-3">
+                        <Link
+                            href="https://github.com/Gazi-Md-Salauddin"
                             className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-blue-500 hover:border-blue-500/30 transition-all duration-300"
                         >
-                            {/*<Github size={18} />*/}
-                        </a>
+                            <FaGithub size={18} />
+                        </Link>
 
-                        <a
-                            href="#"
+                        <Link
+                            href="https://www.linkedin.com/in/gazi-md-salauddin"
                             className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-blue-500 hover:border-blue-500/30 transition-all duration-300"
                         >
-                            {/*<Linkedin size={18} />*/}
-                        </a>
+                            <FaLinkedin size={18} />
+                        </Link>
 
-                        <a
-                            href="#"
+                        <Link
+                            href="https://www.facebook.com/share/1DBYxbEnu4/"
                             className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-blue-500 hover:border-blue-500/30 transition-all duration-300"
                         >
-                            {/*<Facebook size={18} />*/}
-                        </a>
-
-                        <a
-                            href="#"
-                            className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-blue-500 hover:border-blue-500/30 transition-all duration-300"
-                        >
-                            {/*<Instagram size={18} />*/}
-                        </a>
+                            <FaFacebook size={18} />
+                        </Link>
+                        
+                      </div>
                     </div>
                 </div>
 
                 {/* DIVIDER */}
                 <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-blue-500/50 to-transparent my-10" />
 
-
                 {/* BOTTOM */}
-                <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div className="flex flex-col md:flex-row items-center justify-center gap-4">
                     <p className="text-gray-500 text-sm text-center md:text-left">
                         Designed & built by <span className="text-blue-500">Gazi Md Salauddin.</span> &copy; {new Date().getFullYear()}. All rights reserved.
                     </p>
-
-                    {/* BACK TO TOP */}
-                    <Link
-                        href="#hero"
-                        className="w-10 h-10 rounded-full static bg-blue-500 flex items-center justify-center text-white shadow-lg shadow-blue-500/30 hover:scale-110 transition-transform duration-300"
-                    >
-                        {/*<ArrowUp size={18} />*/} Top
-                    </Link>
                 </div>
             </div>
         </footer>

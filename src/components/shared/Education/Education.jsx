@@ -1,6 +1,5 @@
 "use client";
-
-//import { GraduationCap } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Education = () => {
   const educationData = [
@@ -25,7 +24,10 @@ const Education = () => {
       id="education"
       className="py-24 bg-[#0B1220] text-white"
     >
-      <div className="max-w-6xl mx-auto px-6">
+      <motion.div initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true, amount: 0.3 }} className="max-w-6xl mx-auto px-6">
 
         {/* SECTION HEADER */}
         <div className="mb-14">
@@ -76,7 +78,7 @@ const Education = () => {
           ))}
 
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

@@ -2,6 +2,7 @@
 import { Button, Card } from "@heroui/react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from 'next/link'
 import HeroImg from "@/assets/hero-image.jpg";
 import { TypeAnimation } from "react-type-animation";
 
@@ -62,8 +63,8 @@ const Hero = () => {
                     </div>
 
                     <div className="flex gap-4 mt-6">
-                        <Button color="primary">Hire Me</Button>
-                        <Button variant="bordered">View Work</Button>
+                        <Button color="primary" className="hover:shadow-[0_0_30px_rgba(59,130,246,0.5)]"><Link href="#contact">Hire Me</Link></Button>
+                        <Button href="#projects" variant="outline" className="border border-blue-400 text-blue-500 hover:shadow-[0_0_30px_rgba(59,130,246,0.5)]"><Link href="#projects">View Work</Link></Button>
                     </div>
                 </div>
 
