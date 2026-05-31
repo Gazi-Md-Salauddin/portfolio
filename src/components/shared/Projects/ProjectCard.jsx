@@ -76,6 +76,7 @@ const ProjectCard = () => {
               <div className="flex gap-2 mt-4">
                 <Link href={project.live} className="bg-blue-500 rounded-lg py-2 px-2">Live Demo</Link>
                 <Link href={project.code} className="outline-1 outline-blue-500 py-2 px-3 rounded-lg">Code</Link>
+                
               </div>
 
             </Card>

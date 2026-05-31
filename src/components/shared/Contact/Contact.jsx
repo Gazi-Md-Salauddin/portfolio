@@ -83,13 +83,14 @@ const Contact = () => {
 
                     {/*Right Side*/}
                     <form ref={form} onSubmit={sendEmail} className="space-y-4 bg-white/5 border border-white/10 shadow-sm py-10 px-6 md:mr-6 rounded-xl">
-                        <Input label="Name" name="name" className="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-white focus:outline-none focus:border-primary transition" placeholder="Enter Your Full Name" /><br/>
-                        <Input label="Email" name="email" className="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-white focus:outline-none focus:border-primary transition" placeholder="Enter Your email" /><br/>
+                        <Input required label="Name" name="name" className="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-white focus:outline-none focus:border-primary transition" placeholder="Enter Your Full Name" /><br/>
+                        <Input required label="Email" name="email" className="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-white focus:outline-none focus:border-primary transition" placeholder="Enter Your email" /><br/>
                         <TextArea
                             label="Message"
                             name="message"
                             className="w-full bg-white/5 border border-white/10 text-white rounded-xl p-4 focus:outline-none focus:border-primary transition"
                             placeholder="Write Your message"
+                            required
                         />
 
                         <Button type="submit" color="primary" className="w-full">
