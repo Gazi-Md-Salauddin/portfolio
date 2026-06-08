@@ -75,7 +75,7 @@ const Contact = () => {
                                     <p className="text-xs text-muted-foreground uppercase tracking-widest">
                                         Location
                                     </p>
-                                    <p className="font-semibold">Bangladesh</p>
+                                    <p className="font-semibold">Habiganj sadar, Sylhet, Bangladesh</p>
                                 </div>
                             </div>
                         </div>
