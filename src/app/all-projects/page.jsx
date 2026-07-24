@@ -1,53 +1,21 @@
 "use client"
+import React from 'react'
+import projects from '@/data/projects.json'
+import { motion } from "framer-motion";
+import Link from 'next/link';
 import { Card, Button } from "@heroui/react";
 import Image from "next/image";
-import Link from 'next/link';
-import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 
-
-const projects = [
-  {
-    id: 1,
-    title: "DigiTools-Platform",
-    description: "Buying digital tools",
-    image: "/images/digitools.jpg",
-    live: "https://digitools-platform1.netlify.app",
-    code: "https://github.com/Gazi-Md-Salauddin/digiTools-Platform",
-    technologies: ["Tailwind", "DaisyUI", "Javascript", "NextJs"]
-  },
-  {
-    id: 2,
-    title: "SkillSphere",
-    description: "Online learning platform",
-    image: "/images/skillsphere.jpg",
-    live: "https://skill-sphere-virid.vercel.app",
-    code: "https://github.com/Gazi-Md-Salauddin/skill-sphere",
-    technologies: ["Tailwind", "Javascript", "NextJs", "Mongodb", "BetterAuth"]
-  },
-  {
-    id: 3,
-    title: "KeenKeeper",
-    description: "Keep your friendship alive",
-    image: "/images/keenkeeper.jpg",
-    live: "https://keen-keeper-rouge-psi.vercel.app",
-    code: "https://github.com/Gazi-Md-Salauddin/keen-keeper",
-    technologies: ["Tailwind", "DaisyUI", "Javascript", "React"]
-  },
-];
-
-
-const ProjectCard = () => {
-  
+const AllProjectsPage = () => {
   return (
-    <section id="projects" className="py-18 bg-[#0F172A] text-white">
+    <section id="projects" className="py-24 bg-[#0F172A] text-white">
       <motion.div initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true, amount: 0.3 }} className="max-w-6xl mx-auto px-6">
 
-        <h2 className="text-3xl font-bold mb-10 text-blue-400">
-          Selected Projects
+        <h2 className="text-3xl font-bold mb-10 text-blue-400 text-center">
+          All Projects
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -81,13 +49,9 @@ const ProjectCard = () => {
           ))}
 
         </div>
-        
-        <div className="pt-8 text-center">     
-        <Link href="/all-projects" className="text-blue-500 w-full border border-blue-500 text-center p-2">View All Projects</Link>
-        </div>
-        
       </motion.div>
     </section>
-  );
-};
-export default ProjectCard;
+  )
+}
+
+export default AllProjectsPage
