@@ -9,31 +9,31 @@ import { useEffect, useState } from "react";
 const projects = [
   {
     id: 1,
+    title: "Travelo",
+    description: "Online ticket booking platform",
+    image: "/images/travelo.jpg",
+    live: "https://travelo-dun-two.vercel.app",
+    code: "https://github.com/Gazi-Md-Salauddin/travelo",
+    technologies: ["Next.js", "Express.js", "Node.js", "JavaScript", "MongoDB", "BetterAuth", "HeroUI", "Tailwind"]
+  },
+  {
+    id: 2,
+    title: "Pethaven",
+    description: "Pet adoption platform",
+    image: "/images/pethaven.jpg",
+    live: "https://pethaven-woad.vercel.app",
+    code: "https://github.com/Gazi-Md-Salauddin/pethaven",
+    technologies: ["Next.js", "Express.js","Node.js", "MongoDB", "Javascript","BetterAuth", "JWT", "HeroUI", "Tailwind"]
+  },
+  {
+    id: 3,
     title: "DigiTools-Platform",
     description: "Buying digital tools",
     image: "/images/digitools.jpg",
     live: "https://digitools-platform1.netlify.app",
     code: "https://github.com/Gazi-Md-Salauddin/digiTools-Platform",
     technologies: ["Tailwind", "DaisyUI", "Javascript", "NextJs"]
-  },
-  {
-    id: 2,
-    title: "SkillSphere",
-    description: "Online learning platform",
-    image: "/images/skillsphere.jpg",
-    live: "https://skill-sphere-virid.vercel.app",
-    code: "https://github.com/Gazi-Md-Salauddin/skill-sphere",
-    technologies: ["Tailwind", "Javascript", "NextJs", "Mongodb", "BetterAuth"]
-  },
-  {
-    id: 3,
-    title: "KeenKeeper",
-    description: "Keep your friendship alive",
-    image: "/images/keenkeeper.jpg",
-    live: "https://keen-keeper-rouge-psi.vercel.app",
-    code: "https://github.com/Gazi-Md-Salauddin/keen-keeper",
-    technologies: ["Tailwind", "DaisyUI", "Javascript", "React"]
-  },
+  }
 ];
 
 

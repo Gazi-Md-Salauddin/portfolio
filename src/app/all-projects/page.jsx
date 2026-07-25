@@ -24,7 +24,7 @@ const AllProjectsPage = () => {
             <Card key={project.id} className="bg-white/5 border border-white/10 hover:shadow-[0_0_30px_rgba(59,130,246,0.5)]">
 
               <div className="flex items-center justify-center rounded-t-lg">
-                <Image src={project.image} alt={project.title} width={300} height={300} className="w-full object-cover rounded-t-lg"/>
+                <Image src={project.image} alt={project.title} width={300} height={300} priority className="w-full object-cover rounded-t-lg"/>
               </div>
               <div className="flex flex-wrap gap-2">
               {project.technologies.map((tech, index) => 
