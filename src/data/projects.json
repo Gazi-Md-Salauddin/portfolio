@@ -2,8 +2,9 @@
   {
     "id": 1,
     "title": "Travelo",
-    "description": "Online ticket booking platform",
+    "subtitle": "Online ticket booking platform",
     "image": "/images/travelo.jpg",
+    "description": "Travelo is a full-stack online ticket booking platform that allows users to search, book, and manage travel tickets with ease. It features secure authentication, responsive design, real-time booking management, and a modern user interface. The project was built to practice full-stack development using Next.js, Express.js, MongoDB, and BetterAuth while focusing on performance, scalability, and user experience.",
     "live": "https://travelo-dun-two.vercel.app",
     "code": "https://github.com/Gazi-Md-Salauddin/travelo",
     "technologies": ["Next.js", "Express.js", "Node.js", "JavaScript", "MongoDB", "BetterAuth", "HeroUI", "Tailwind"]
@@ -11,8 +12,9 @@
   {
     "id": 2,
     "title": "Pethaven",
-    "description": "Pet adoption platform",
+    "subtitle": "Pet adoption platform",
     "image": "/images/pethaven.jpg",
+    "description": "PetHaven is a full-stack pet adoption platform designed to connect pet owners with potential adopters. Users can browse available pets, submit adoption requests, and manage their own listings. The platform includes secure authentication, role-based features, and a responsive interface. This project helped me strengthen my skills in Next.js, Express.js, MongoDB, BetterAuth, and building real-world CRUD applications.",
     "live": "https://pethaven-woad.vercel.app",
     "code": "https://github.com/Gazi-Md-Salauddin/pethaven",
     "technologies": ["Next.js", "Express.js","Node.js", "MongoDB", "Javascript","BetterAuth", "JWT", "HeroUI", "Tailwind"]
@@ -20,28 +22,31 @@
   {
     "id": 3,
     "title": "DigiTools-Platform",
-    "description": "Buying digital tools",
+    "subtitle": "Buying digital tools",
     "image": "/images/digitools.jpg",
+    "description": "DigiTools Platform is a digital marketplace where users can explore and purchase various digital tools and resources. The project focuses on creating a clean, responsive, and user-friendly shopping experience. It was developed to improve my frontend development skills using JavaScript, Tailwind CSS, and DaisyUI while practicing modern UI design principles.",
     "live": "https://digitools-platform1.netlify.app",
     "code": "https://github.com/Gazi-Md-Salauddin/digiTools-Platform",
-    "technologies": ["Tailwind", "DaisyUI", "Javascript", "NextJs"]
+    "technologies": ["Next.js", "JavaScript", "DaisyUI", "Tailwind"]
   },
   {
     "id": 4,
     "title": "SkillSphere",
-    "description": "Online learning platform",
+    "subtitle": "Online learning platform",
     "image": "/images/skillsphere.jpg",
+    "description": "SkillSphere is an online learning platform where users can discover courses and enhance their skills through an intuitive interface. The application includes user authentication, course management, and a responsive design. This project allowed me to gain practical experience with Next.js, MongoDB, BetterAuth, and building scalable web applications.",
     "live": "https://skill-sphere-virid.vercel.app",
     "code": "https://github.com/Gazi-Md-Salauddin/skill-sphere",
-    "technologies": ["Tailwind", "Javascript", "NextJs", "Mongodb", "BetterAuth"]
+    "technologies": ["Next.js", "Javascript", "Mongodb", "BetterAuth", "Tailwind"]
   },
   {
     "id": 5,
     "title": "KeenKeeper",
-    "description": "Keep your friendship alive",
+    "subtitle": "Keep your friendship alive",
     "image": "/images/keenkeeper.jpg",
+    "description": "KeenKeeper is a friendship management application that helps users stay connected with friends by organizing important dates and personal information. The project features a clean interface, responsive design, and an easy-to-use experience. It was created to practice React, JavaScript, Tailwind CSS, and efficient state management while solving a real-world problem.",
     "live": "https://keen-keeper-rouge-psi.vercel.app",
     "code": "https://github.com/Gazi-Md-Salauddin/keen-keeper",
-    "technologies": ["Tailwind", "DaisyUI", "Javascript", "React"]
+    "technologies": ["React", "Javascript", "DaisyUI", "Tailwind"]
   }
 ]

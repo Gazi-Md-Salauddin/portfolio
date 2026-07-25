@@ -10,8 +10,9 @@ const projects = [
   {
     id: 1,
     title: "Travelo",
-    description: "Online ticket booking platform",
+    subtitle: "Online ticket booking platform",
     image: "/images/travelo.jpg",
+    description: "Travelo is a full-stack online ticket booking platform that allows users to search, book, and manage travel tickets with ease. It features secure authentication, responsive design, real-time booking management, and a modern user interface. The project was built to practice full-stack development using Next.js, Express.js, MongoDB, and BetterAuth while focusing on performance, scalability, and user experience.",
     live: "https://travelo-dun-two.vercel.app",
     code: "https://github.com/Gazi-Md-Salauddin/travelo",
     technologies: ["Next.js", "Express.js", "Node.js", "JavaScript", "MongoDB", "BetterAuth", "HeroUI", "Tailwind"]
@@ -19,8 +20,9 @@ const projects = [
   {
     id: 2,
     title: "Pethaven",
-    description: "Pet adoption platform",
+    subtitle: "Pet adoption platform",
     image: "/images/pethaven.jpg",
+    description: "PetHaven is a full-stack pet adoption platform designed to connect pet owners with potential adopters. Users can browse available pets, submit adoption requests, and manage their own listings. The platform includes secure authentication, role-based features, and a responsive interface. This project helped me strengthen my skills in Next.js, Express.js, MongoDB, BetterAuth, and building real-world CRUD applications.",
     live: "https://pethaven-woad.vercel.app",
     code: "https://github.com/Gazi-Md-Salauddin/pethaven",
     technologies: ["Next.js", "Express.js","Node.js", "MongoDB", "Javascript","BetterAuth", "JWT", "HeroUI", "Tailwind"]
@@ -28,11 +30,12 @@ const projects = [
   {
     id: 3,
     title: "DigiTools-Platform",
-    description: "Buying digital tools",
+    subtitle: "Buying digital tools",
     image: "/images/digitools.jpg",
+    description: "DigiTools Platform is a digital marketplace where users can explore and purchase various digital tools and resources. The project focuses on creating a clean, responsive, and user-friendly shopping experience. It was developed to improve my frontend development skills using JavaScript, Tailwind CSS, and DaisyUI while practicing modern UI design principles.",
     live: "https://digitools-platform1.netlify.app",
     code: "https://github.com/Gazi-Md-Salauddin/digiTools-Platform",
-    technologies: ["Tailwind", "DaisyUI", "Javascript", "NextJs"]
+    technologies: ["Next.js", "JavaScript", "DaisyUI", "Tailwind"]
   }
 ];
 
@@ -68,12 +71,12 @@ const ProjectCard = () => {
               </h3>
 
               <p className="text-gray-400 text-sm">
-                {project.description}
+                {project.subtitle}
               </p>
 
               <div className="flex gap-2 mt-4">
-                <Link href={project.live} className="bg-blue-500 rounded-lg py-2 px-2">Live Demo</Link>
-                <Link href={project.code} className="outline-1 outline-blue-500 py-2 px-3 rounded-lg">Code</Link>
+                <Link href={`/all-projects/${project.id}`} className="bg-blue-500 rounded-lg py-2 px-2">View Details</Link>
+                
                 
               </div>
 

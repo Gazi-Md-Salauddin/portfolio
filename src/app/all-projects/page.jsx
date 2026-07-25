@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 import projects from '@/data/projects.json'
-import { motion } from "framer-motion";
 import Link from 'next/link';
 import { Card, Button } from "@heroui/react";
 import Image from "next/image";
@@ -9,10 +8,7 @@ import Image from "next/image";
 const AllProjectsPage = () => {
   return (
     <section id="projects" className="py-24 bg-[#0F172A] text-white">
-      <motion.div initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6 }}
-                    viewport={{ once: true, amount: 0.3 }} className="max-w-6xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
 
         <h2 className="text-3xl font-bold mb-10 text-blue-400 text-center">
           All Projects
@@ -36,12 +32,12 @@ const AllProjectsPage = () => {
               </h3>
 
               <p className="text-gray-400 text-sm">
-                {project.description}
+                {project.subtitle}
               </p>
 
               <div className="flex gap-2 mt-4">
-                <Link href={project.live} className="bg-blue-500 rounded-lg py-2 px-2">Live Demo</Link>
-                <Link href={project.code} className="outline-1 outline-blue-500 py-2 px-3 rounded-lg">Code</Link>
+                <Link href={`/all-projects/${project.id}`} className="bg-blue-500 rounded-lg py-2 px-2">View Details</Link>
+                
                 
               </div>
 
@@ -49,7 +45,7 @@ const AllProjectsPage = () => {
           ))}
 
         </div>
-      </motion.div>
+      </div>
     </section>
   )
 }
