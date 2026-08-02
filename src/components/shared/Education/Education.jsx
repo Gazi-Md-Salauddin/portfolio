@@ -4,6 +4,13 @@ import { motion } from "framer-motion";
 const Education = () => {
   const educationData = [
     {
+      degree: "B.A. (Honours) in Bangla",
+      institute: "Shaistaganj Degree College (Affiliated with National University)",
+      year: "2025 - Present",
+      description:
+        "Currently a second-year Honours student in the Bangla Department.",
+    },
+    {
       degree: "Higher Secondary Certificate (HSC)",
       institute: "Shachindra College",
       year: "2022 - 2023",

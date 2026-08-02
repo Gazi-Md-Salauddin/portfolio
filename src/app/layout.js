@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import "devicon/devicon.min.css";
 import "./globals.css";
 import Navbar from '@/components/shared/Navbar/Navbar';
 import Cursor from '@/components/Cursor';

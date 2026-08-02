@@ -84,6 +84,7 @@ const Hero = () => {
                             src={HeroImg}
                             alt="Hero Image"
                             className="rounded-full"
+                          priority
                         />
                     </motion.div>
                 </div>

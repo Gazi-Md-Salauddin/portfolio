@@ -19,9 +19,9 @@ const About = () => {
                     
                     <p className="text-gray-400 mb-4 text-xl">
                         I am a MERN Stack Developer from Bangladesh. Currently I
-                        am building my skills in React, NextJs, JavaScript,
-                        Mongodb, Better-auth, Express.js, Node.js and Tailwind
-                        css by creating real projects and practicing problem
+                        am building my skills in Next.js, React, Typescript, JavaScript,
+                        MongoDB, Better-auth, Express.js, Node.js and Tailwind
+                        CSS by creating real projects and practicing problem
                         solving. I enjoy learning how websites work and turning
                         ideas into responsive and user-friendly web
                         applications. I am continuously learning new
@@ -58,7 +58,7 @@ const About = () => {
                     </div>
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-2 pt-4">
                     <div className="bg-white/5 border border-white/10 p-8 rounded-xl items-center text-center">
-                      <span className="font-bold text-xl">15+</span>
+                      <span className="font-bold text-xl">10+</span>
                       <p>Projects</p>
                     </div>
                     <div className="bg-white/5 border border-white/10 p-6 rounded-xl flex flex-col justify-center items-center text-center">
