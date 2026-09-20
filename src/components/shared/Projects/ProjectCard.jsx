@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from 'next/link';
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { FaArrowRight } from "react-icons/fa6";
 
 
 const projects = [
@@ -35,23 +36,29 @@ const projects = [
     description: "PetHaven is a full-stack pet adoption platform designed to connect pet owners with potential adopters. Users can browse available pets, submit adoption requests, and manage their own listings. The platform includes secure authentication, role-based features, and a responsive interface. This project helped me strengthen my skills in Next.js, Express.js, MongoDB, BetterAuth, and building real-world CRUD applications.",
     live: "https://pethaven-woad.vercel.app",
     code: "https://github.com/Gazi-Md-Salauddin/pethaven",
-    technologies: ["Next.js", "Express.js","Node.js", "MongoDB", "Javascript","BetterAuth", "JWT", "HeroUI", "Tailwind"]
+    technologies: ["Next.js", "Express.js", "Node.js", "MongoDB", "Javascript", "BetterAuth", "JWT", "HeroUI", "Tailwind"]
   }
 ];
 
 
 const ProjectCard = () => {
-  
+
   return (
     <section id="projects" className="py-18 bg-[#020617] text-white">
       <motion.div initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6 }}
-                    viewport={{ once: true, amount: 0.3 }} className="max-w-6xl mx-auto px-6">
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true, amount: 0.3 }} className="max-w-7xl mx-auto px-6">
 
-        <h2 className="text-3xl font-bold mb-10 text-blue-400">
-          Selected Projects
-        </h2>
+        <div className="text-center mb-14">
+          <p className="text-sm lg:text-xl uppercase mb-3 text-blue-400">
+            Featured Projects
+          </p>
+          <h2 className="mt-2 text-3xl md:text-4xl lg:text-5xl font-bold text-white">Things I've Built</h2>
+          <p className="text-gray-400 py-6">A collection of projects where I turned ideas into functional and user-friendly applications.</p>
+
+        </div>
+
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
@@ -59,12 +66,12 @@ const ProjectCard = () => {
             <Card key={project.id} className="bg-white/5 border border-white/10 hover:shadow-[0_0_30px_rgba(59,130,246,0.5)]">
 
               <div className="flex items-center justify-center rounded-t-lg">
-                <Image src={project.image} alt={project.title} width={300} height={300} className="w-full object-cover rounded-t-lg"/>
+                <Image src={project.image} alt={project.title} width={300} height={300} className="w-full object-cover rounded-t-lg" />
               </div>
               <div className="flex flex-wrap gap-2">
-              {project.technologies.map((tech, index) => 
-              <p className="bg-blue-500/10 border border-blue-500/20 rounded-lg text-sm p-2 text-blue-500" key={index}>{tech}</p>
-              )}
+                {project.technologies.map((tech, index) =>
+                  <p className="bg-blue-500/10 border border-blue-500/20 rounded-lg text-sm p-2 text-blue-500" key={index}>{tech}</p>
+                )}
               </div>
               <h3 className="mt-4 font-bold">
                 {project.title}
@@ -75,20 +82,18 @@ const ProjectCard = () => {
               </p>
 
               <div className="flex gap-2 mt-4">
-                <Link href={`/all-projects/${project.id}`} className="bg-blue-500 rounded-lg py-2 px-2">View Details</Link>
-                
-                
+                <Link href={`/all-projects/${project.id}`} className="flex items-center gap-2 bg-blue-500 rounded-lg p-2">View Details<FaArrowRight/></Link>
               </div>
 
             </Card>
           ))}
 
         </div>
-        
-        <div className="pt-8 text-center">     
-        <Link href="/all-projects" className="text-blue-500 w-full border border-blue-500 text-center p-2">View All Projects</Link>
+
+        <div className="pt-16 text-center">
+          <Link href="/all-projects" className="border hover:border-blue-500 hover:text-blue-500 text-center rounded-lg p-2">View All Projects</Link>
         </div>
-        
+
       </motion.div>
     </section>
   );

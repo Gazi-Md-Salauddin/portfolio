@@ -33,16 +33,18 @@ const Education = () => {
     >
       <motion.div initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6 }}
-                    viewport={{ once: true, amount: 0.3 }} className="max-w-6xl mx-auto px-6">
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true, amount: 0.3 }} className="max-w-7xl mx-auto px-6">
 
         {/* SECTION HEADER */}
-        <div className="mb-14">
-          <p className="text-blue-400 text-3xl font-bold mb-3">
+        <div className="mb-14 text-center">
+          <p className="text-blue-400 text-sm lg:text-xl uppercase mb-3">
             Education
           </p>
-
-          
+          <h2 className="mt-2 text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+            Academic Journey
+          </h2>
+          <p className="text-gray-400 py-6">My academic background and educational journey.</p>
         </div>
 
         {/* TIMELINE */}
@@ -58,7 +60,7 @@ const Education = () => {
 
               {/* CARD */}
               <div className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl p-6 mr-6 hover:border-blue-500/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]">
-                
+
 
                 {/* YEAR */}
                 <span className="text-sm text-blue-400 p-2 font-medium bg-blue-500/10 border border-blue-500/20 rounded-lg">

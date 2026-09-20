@@ -6,9 +6,9 @@ const Footer = () => {
     return (
         <footer className="relative bg-[#020617] border-t border-white/10 overflow-hidden">
             {/* TOP GLOW */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[200px] bg-blue-500/10 blur-[120px]" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-100 h-50 bg-blue-500/10 blur-[120px]" />
 
-            <div className="max-w-6xl mx-auto px-6 py-14 relative z-10">
+            <div className="max-w-7xl mx-auto px-6 py-14 relative z-10">
                 {/* TOP AREA */}
                 <div className="md:flex items-center justify-between gap-10">
                     {/* LEFT */}
@@ -88,7 +88,7 @@ const Footer = () => {
                 </div>
 
                 {/* DIVIDER */}
-                <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-blue-500/50 to-transparent my-10" />
+                <div className="w-full h-px bg-linear-to-r from-transparent via-blue-500/50 to-transparent my-10" />
 
                 {/* BOTTOM */}
                 <div className="flex flex-col md:flex-row items-center justify-center gap-4">
