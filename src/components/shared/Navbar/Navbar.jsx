@@ -23,7 +23,7 @@ const Navbar = () => {
                 <div className="hidden md:flex gap-6 text-sm text-gray-400">
                     {navLinks.map((navItem) => (
               
-                <Link key={navItem.href} href={navItem.href} className="block hover:bg-blue-700 px-2 py-1">
+                <Link key={navItem.href} href={navItem.href} className="block hover:text-blue-700 px-2 py-1">
                     {navItem.name}
                 </Link>
               ))}

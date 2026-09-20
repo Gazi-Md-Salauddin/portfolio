@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       data-scroll-behavior="smooth"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="bg-gradient-to-br from-[#020617] via-[#0B1220] to-[#020617] text-white">
+      <body className="bg-[#020617] text-white">
         <Navbar/>
         <main>{children}</main>
         <Cursor/>

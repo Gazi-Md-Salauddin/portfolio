@@ -9,6 +9,16 @@ import { useEffect, useState } from "react";
 const projects = [
   {
     id: 1,
+    title: "Fitora",
+    subtitle: "Fitness planner platform",
+    image: "/images/fitora.png",
+    description: "Fitora is a modern fitness planner platform that helps users set fitness goals, plan and track workouts, calculate BMI and calorie requirements, monitor progress, and manage their fitness journey through an organized and user-friendly interface.",
+    live: "https://fitora-fitness.vercel.app",
+    code: "https://github.com/Developer-Moy/Fitora",
+    technologies: ["Next.js", "Typescript", "Express.js", "Node.js", "JavaScript", "MongoDB", "Mongoose", "BetterAuth", "Tailwind"]
+  },
+  {
+    id: 2,
     title: "Travelo",
     subtitle: "Online ticket booking platform",
     image: "/images/travelo.jpg",
@@ -18,7 +28,7 @@ const projects = [
     technologies: ["Next.js", "Express.js", "Node.js", "JavaScript", "MongoDB", "BetterAuth", "HeroUI", "Tailwind"]
   },
   {
-    id: 2,
+    id: 3,
     title: "Pethaven",
     subtitle: "Pet adoption platform",
     image: "/images/pethaven.jpg",
@@ -26,16 +36,6 @@ const projects = [
     live: "https://pethaven-woad.vercel.app",
     code: "https://github.com/Gazi-Md-Salauddin/pethaven",
     technologies: ["Next.js", "Express.js","Node.js", "MongoDB", "Javascript","BetterAuth", "JWT", "HeroUI", "Tailwind"]
-  },
-  {
-    id: 3,
-    title: "DigiTools-Platform",
-    subtitle: "Buying digital tools",
-    image: "/images/digitools.jpg",
-    description: "DigiTools Platform is a digital marketplace where users can explore and purchase various digital tools and resources. The project focuses on creating a clean, responsive, and user-friendly shopping experience. It was developed to improve my frontend development skills using JavaScript, Tailwind CSS, and DaisyUI while practicing modern UI design principles.",
-    live: "https://digitools-platform1.netlify.app",
-    code: "https://github.com/Gazi-Md-Salauddin/digiTools-Platform",
-    technologies: ["Next.js", "JavaScript", "DaisyUI", "Tailwind"]
   }
 ];
 
@@ -43,7 +43,7 @@ const projects = [
 const ProjectCard = () => {
   
   return (
-    <section id="projects" className="py-18 bg-[#0F172A] text-white">
+    <section id="projects" className="py-18 bg-[#020617] text-white">
       <motion.div initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}

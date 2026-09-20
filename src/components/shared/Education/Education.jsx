@@ -29,7 +29,7 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="py-24 bg-[#0B1220] text-white"
+      className="py-24 bg-[#020617] text-white"
     >
       <motion.div initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}

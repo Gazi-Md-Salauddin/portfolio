@@ -9,10 +9,10 @@ import { FaDownload } from "react-icons/fa";
 
 const Hero = () => {
     return (
-        <section className="flex items-center text-white mt-26 mx-6">
-            <div className="w-full mx-auto grid md:grid-cols-2 gap-18">
+        <section className="flex items-center bg-[#020617] text-white mt-26">
+            <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-18">
                 {/* LEFT */}
-                <div>
+                <div className="">
                     <div className="inline-flex items-center gap-3 px-4 py-2 my-2 border border-blue-700 bg-blue-950/30 rounded-full">
                         <span className="animate-pulse w-3 h-3 bg-blue-500 rounded-full shadow-[0_0_10px_rgba(59,130,246,0.8)]"></span>
 
