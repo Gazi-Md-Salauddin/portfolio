@@ -18,7 +18,7 @@ const About = () => {
           <h2 className="text-3xl font-bold mb-4 text-blue-400">About Me</h2>
 
           <p className="text-gray-400 mb-4 text-xl">
-            I'm a MERN Stack Developer from Bangladesh passionate about building modern and user-friendly web applications. I work with React, Next.js, TypeScript, Node.js, Express.js and MongoDB to develop responsive frontend experiences and scalable backend solutions. <br /> <br />
+            I'm a Junior Full Stack Developer from Bangladesh about building modern and user-friendly web applications. I work with React, Next.js, TypeScript, Node.js, Express.js and MongoDB to develop responsive frontend experiences and scalable backend solutions. <br /> <br />
             I've worked on both personal and team-based projects, including Fitora, where I collaborated with a team to build real-world fitness management features. I enjoy solving problems, learning new technologies and turning ideas into functional products.
           </p>
         </motion.div>
@@ -46,7 +46,7 @@ const About = () => {
               />
             </div>
             <h2 className="text-center font-bold text-xl pt-2">Gazi Md Salauddin</h2>
-            <p className="text-center text-blue-500">MERN Stack Developer</p>
+            <p className="text-center text-blue-500">Junior Full Stack Developer</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-2 pt-4">
             <div className="bg-white/5 border border-white/10 p-8 rounded-xl items-center text-center">

@@ -1,6 +1,6 @@
 "use client";
 import Link from 'next/link'
-import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -19,7 +19,7 @@ const Footer = () => {
                         </h2>
 
                         <p className="text-gray-400 mt-3 max-w-sm leading-relaxed">
-                            Frontend Developer focused on building modern,
+                            Junior Full Stack Developer focused on building modern,
                             responsive and high-performance web experiences.
                         </p>
                     </div>

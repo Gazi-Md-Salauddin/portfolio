@@ -81,7 +81,7 @@ const ProjectCard = () => {
                 {project.subtitle}
               </p>
 
-              <div className="flex gap-2 mt-4">
+              <div className="flex gap-2">
                 <Link href={`/all-projects/${project.id}`} className="flex items-center gap-2 bg-blue-500 rounded-lg p-2">View Details<FaArrowRight/></Link>
               </div>
 

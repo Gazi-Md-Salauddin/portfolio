@@ -4,6 +4,13 @@ import { motion } from "framer-motion";
 const Education = () => {
   const educationData = [
     {
+      degree: "Complete Web Development Course",
+      institute: "Programming Hero",
+      year: "01 January, 2026 - 01 August, 2026",
+      description:
+        "Successfully completing the Complete Web Development Course with Programming Hero",
+    },
+    {
       degree: "B.A. (Honours) in Bangla",
       institute: "Shaistaganj Degree College (Affiliated with National University)",
       year: "2025 - Present",
@@ -56,7 +63,7 @@ const Education = () => {
               className="relative pl-10"
             >
               {/* DOT */}
-              <div className="absolute -left-[11px] top-2 w-5 h-5 rounded-full bg-blue-500 shadow-[0_0_20px_rgba(59,130,246,0.7)]" />
+              <div className="absolute -left-2.75 top-2 w-5 h-5 rounded-full bg-blue-500 shadow-[0_0_20px_rgba(59,130,246,0.7)]" />
 
               {/* CARD */}
               <div className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl p-6 mr-6 hover:border-blue-500/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]">

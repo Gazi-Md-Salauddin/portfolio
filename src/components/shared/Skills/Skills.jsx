@@ -77,7 +77,7 @@ const Skills = () => {
       <div className="text-center mb-12">
       <p className="text-blue-400 text-sm lg:text-xl uppercase mb-4">Skills</p>
       <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">Modern Technologies & Tools</h2>
-      <p className=" max-w-xl mx-auto text-gray-400 py-6">I work with modern technologies and tools to build responsive, scalable, and user-friendly web applications.</p>
+      <p className=" max-w-xl mx-auto text-gray-400 py-6 px-4">I work with modern technologies and tools to build responsive, scalable, and user-friendly web applications.</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 px-6">

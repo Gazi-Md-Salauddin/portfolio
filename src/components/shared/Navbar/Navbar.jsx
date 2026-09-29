@@ -45,7 +45,9 @@ const Navbar = () => {
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     <svg
-                        className="w-6 h-6"
+                        className={`w-6 h-6 transition-transform duration-300 ease-in-out ${
+            isOpen ? "rotate-90" : "rotate-0"
+        }`}
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -69,7 +71,10 @@ const Navbar = () => {
                 </button>
             </div>
             <div
-                className={`${isOpen ? "block" : "hidden"} md:hidden mt-4 space-y-4 pb-4`}
+                className={`${
+                    isOpen ? 
+                    "block" : 
+                    "hidden"} md:hidden mt-4 space-y-4 pb-4`}
             >
                 {navLinks.map((navItem) => (
 
@@ -78,9 +83,9 @@ const Navbar = () => {
                         onClick={() => {
                             setActiveLink(navItem.name);
                             setIsOpen(false);
-                        }} className={`block hover:bg-blue-700 px-2 py-1 ${activeLink === navItem.name
+                        }} className={`block hover:bg-blue-600 px-2 py-1 ${activeLink === navItem.name
                             ? "text-blue-500 border-b-2 border-blue-500"
-                            : "text-gray-400 hover:text-blue-400"
+                            : "text-gray-400 hover:text-white transition-all"
                             }`}>
                         {navItem.name}
                     </Link>
