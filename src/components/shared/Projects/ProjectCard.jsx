@@ -3,7 +3,6 @@ import { Card, Button } from "@heroui/react";
 import Image from "next/image";
 import Link from 'next/link';
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 
 
@@ -22,11 +21,11 @@ const projects = [
     id: 2,
     title: "Travelo",
     subtitle: "Online ticket booking platform",
-    image: "/images/travelo.jpg",
+    image: "/images/travelo.png",
     description: "Travelo is a full-stack online ticket booking platform that allows users to search, book, and manage travel tickets with ease. It features secure authentication, responsive design, real-time booking management, and a modern user interface. The project was built to practice full-stack development using Next.js, Express.js, MongoDB, and BetterAuth while focusing on performance, scalability, and user experience.",
     live: "https://travelo-dun-two.vercel.app",
     code: "https://github.com/Gazi-Md-Salauddin/travelo",
-    technologies: ["Next.js", "Express.js", "Node.js", "JavaScript", "MongoDB", "BetterAuth", "HeroUI", "Tailwind"]
+    technologies: ["Next.js", "Express.js", "Node.js", "JavaScript", "MongoDB", "BetterAuth", "Stripe", "Tailwind"]
   },
   {
     id: 3,
@@ -54,7 +53,7 @@ const ProjectCard = () => {
           <p className="text-sm lg:text-xl uppercase mb-3 text-blue-400">
             Featured Projects
           </p>
-          <h2 className="mt-2 text-3xl md:text-4xl lg:text-5xl font-bold text-white">Things I've Built</h2>
+          <h2 className="mt-2 text-3xl md:text-4xl lg:text-5xl font-bold text-white">Things I&apos;ve Built</h2>
           <p className="text-gray-400 py-6">A collection of projects where I turned ideas into functional and user-friendly applications.</p>
 
         </div>
