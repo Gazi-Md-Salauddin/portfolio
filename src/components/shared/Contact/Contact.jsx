@@ -37,7 +37,7 @@ const Contact = () => {
             <motion.div initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    viewport={{ once: true, amount: 0.3 }} className="max-w-7xl mx-auto bg-white/5 border border-white/10 rounded-xl px-6 py-6">
+                    viewport={{ once: true, amount: 0.3 }} className="container mx-auto bg-white/5 border border-white/10 rounded-xl px-6 py-6">
                 <h2 className="text-xl mb-8 text-blue-400 uppercase">Contact Me</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/*Left Side*/}

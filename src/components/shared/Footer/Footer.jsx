@@ -8,7 +8,7 @@ const Footer = () => {
             {/* TOP GLOW */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-100 h-50 bg-blue-500/10 blur-[120px]" />
 
-            <div className="max-w-7xl mx-auto px-6 py-14 relative z-10">
+            <div className="container mx-auto px-6 py-14 relative z-10">
                 {/* TOP AREA */}
                 <div className="md:flex items-center justify-between gap-10">
                     {/* LEFT */}

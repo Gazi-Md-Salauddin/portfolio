@@ -21,7 +21,7 @@ const projects = [
     id: 2,
     title: "Travelo",
     subtitle: "Online ticket booking platform",
-    image: "/images/travelo.png",
+    image: "/images/traveloImg.png",
     description: "Travelo is a full-stack online ticket booking platform that allows users to search, book, and manage travel tickets with ease. It features secure authentication, responsive design, real-time booking management, and a modern user interface. The project was built to practice full-stack development using Next.js, Express.js, MongoDB, and BetterAuth while focusing on performance, scalability, and user experience.",
     live: "https://travelo-dun-two.vercel.app",
     code: "https://github.com/Gazi-Md-Salauddin/travelo",
@@ -47,7 +47,7 @@ const ProjectCard = () => {
       <motion.div initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        viewport={{ once: true, amount: 0.3 }} className="max-w-7xl mx-auto px-6">
+        viewport={{ once: true, amount: 0.3 }} className="container mx-auto px-6">
 
         <div className="text-center mb-14">
           <p className="text-sm lg:text-xl uppercase mb-3 text-blue-400">

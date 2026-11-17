@@ -16,7 +16,7 @@ const Navbar = () => {
     const [activeLink, setActiveLink] = useState("Home");
     return (
         <nav className="fixed top-0 w-full z-50 bg-[#020617]/70 backdrop-blur-xl border-b border-white/10">
-            <div className="max-w-7xl mx-auto flex justify-between items-center h-18 px-6">
+            <div className="container mx-auto flex justify-between items-center h-18 px-6">
                 <h1 className="text-xl font-bold text-blue-500">
                     Gazi Md Salauddin<span className="text-white">.</span>
                 </h1>

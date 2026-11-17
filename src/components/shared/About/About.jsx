@@ -1,14 +1,14 @@
 "use client"
 import Image from "next/image";
 import { motion } from "framer-motion";
-import HeroImg from "@/assets/hero-image.jpg";
+import HeroImg from "@/assets/heroImg.png";
 import Graph from '@/assets/graph.png'
 import Books from '@/assets/books.png'
 
 const About = () => {
   return (
     <section id="about" className="py-18 bg-[#020617] text-white my-16">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+      <div className="container mx-auto px-6 grid md:grid-cols-2 gap-10">
 
         {/*Left side*/}
         <motion.div initial={{ opacity: 0, y: 40 }}
@@ -18,8 +18,8 @@ const About = () => {
           <h2 className="text-3xl font-bold mb-4 text-blue-400">About Me</h2>
 
           <p className="text-gray-400 mb-4 text-xl">
-            I'm a Junior Full Stack Developer from Bangladesh about building modern and user-friendly web applications. I work with React, Next.js, TypeScript, Node.js, Express.js and MongoDB to develop responsive frontend experiences and scalable backend solutions. <br /> <br />
-            I've worked on both personal and team-based projects, including Fitora, where I collaborated with a team to build real-world fitness management features. I enjoy solving problems, learning new technologies and turning ideas into functional products.
+            I&apos;m a Junior Full Stack Developer from Bangladesh about building modern and user-friendly web applications. I work with React, Next.js, TypeScript, Node.js, Express.js and MongoDB to develop responsive frontend experiences and scalable backend solutions. <br /> <br />
+            I&apos;ve worked on both personal and team-based projects, including Fitora, where I collaborated with a team to build real-world fitness management features. I enjoy solving problems, learning new technologies and turning ideas into functional products.
           </p>
         </motion.div>
 

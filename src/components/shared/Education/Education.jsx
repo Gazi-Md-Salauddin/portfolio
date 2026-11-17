@@ -41,7 +41,7 @@ const Education = () => {
       <motion.div initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        viewport={{ once: true, amount: 0.3 }} className="max-w-7xl mx-auto px-6">
+        viewport={{ once: true, amount: 0.3 }} className="container mx-auto px-6">
 
         {/* SECTION HEADER */}
         <div className="mb-14 text-center">

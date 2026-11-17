@@ -73,7 +73,7 @@ const Skills = () => {
 
 
   return (
-    <section id="skills" className="max-w-7xl mx-auto py-18 bg-[#020617]">
+    <section id="skills" className="container mx-auto py-18 bg-[#020617]">
       <div className="text-center mb-12">
       <p className="text-blue-400 text-sm lg:text-xl uppercase mb-4">Skills</p>
       <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">Modern Technologies & Tools</h2>
